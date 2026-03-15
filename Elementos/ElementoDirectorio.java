@@ -1,14 +1,16 @@
+package Elementos;
 import java.time.LocalDate;
+import java.util.ArrayList;
+
+import Criterios.*;
 
 public abstract class ElementoDirectorio {
     private String nombre;
     private LocalDate fechaCreacion;
-    private double tamanio;
 
-    public ElementoDirectorio(String nombre, LocalDate fechaCreacion, double tamanio) {
+    public ElementoDirectorio(String nombre) {
         this.nombre = nombre;
-        this.fechaCreacion = fechaCreacion;
-        this.tamanio = tamanio;
+        this.fechaCreacion = LocalDate.now();
     }
 
     public String getNombre() {
@@ -27,15 +29,7 @@ public abstract class ElementoDirectorio {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public double getTamanio() {
-        return tamanio;
-    }
-
-    public void setTamanio(double tamanio) {
-        this.tamanio = tamanio;
-    }
-
-    
-
+    public abstract double getTamanio();
+    public abstract ArrayList<ElementoDirectorio> buscar(Condicion condicion);
     
 }

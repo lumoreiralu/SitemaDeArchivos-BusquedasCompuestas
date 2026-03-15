@@ -1,12 +1,12 @@
-import java.time.LocalDate;
+package Elementos;
 import java.util.ArrayList;
 
 public class Directorio extends ElementoDirectorio{
 
     private ArrayList<ElementoDirectorio> directorios;
 
-    public Directorio(String nombre, LocalDate fechaCreacion, Double tamanio) {
-        super(nombre, fechaCreacion, tamanio);
+    public Directorio(String nombre) {
+        super(nombre);
         this.directorios = new ArrayList<>();
     }
     
