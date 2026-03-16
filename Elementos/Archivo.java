@@ -26,5 +26,11 @@ public class Archivo extends ElementoDirectorio {
         return resultado;
     }
     
+    @Override
+    public String toString(){
+        return "Archivo: " + this.getNombre() + 
+        "Fecha de Creacion: " + this.getFechaCreacion();
+    }
+
     
 }

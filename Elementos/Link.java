@@ -38,6 +38,10 @@ public class Link extends ElementoDirectorio {
         return resultado;
     }
 
+    @Override
+    public String toString(){
+        return "Link: " + this.getNombre();
+    }
     
     
 }

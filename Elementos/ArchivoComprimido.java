@@ -25,5 +25,10 @@ public class ArchivoComprimido extends Directorio {
         return resultado;
        
     }
+
+    @Override
+    public String toString(){
+        return "Archivo Comprimido: " + this.getNombre();
+    }
     
 }

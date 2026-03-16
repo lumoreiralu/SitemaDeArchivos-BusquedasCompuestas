@@ -36,4 +36,9 @@ public class Directorio extends ElementoDirectorio{
         }
         return resultado;
     }
+
+    @Override
+    public String toString(){
+        return "Directorio: " + this.getNombre();
+    }
 }
